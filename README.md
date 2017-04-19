@@ -46,7 +46,7 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 * `-e PUID` for UserID - see below for explanation
 * `-e TZ` for timezone EG. Europe/London
 
-It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it jackett /bin/bash`.
+It is based on ubuntu xenial with s6 overlay, for shell access whilst the container is running do `docker exec -it jackett /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -80,4 +80,5 @@ More info at [Jackett](https://github.com/Jackett/Jackett).
 
 ## Versions
 
++ **19.04.17:** Switch to using inhouse mono baseimage, ubuntu xenial based.
 + **11.12.16:** Initial Release.
